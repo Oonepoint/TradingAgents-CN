@@ -1,0 +1,10 @@
+Windows（有虚拟环境时）：python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+前端在 frontend/ 目录启动：
+
+确保 Node 18+。
+安装依赖：cd frontend && npm install（或 npm --prefix frontend install）。
+启动开发服：npm run dev（或 npm --prefix frontend run dev），默认 http://localhost:3000，已代理 /api 到后端 8000。
+如有需要，在 .env.local 写 VITE_API_BASE_URL=http://localhost:8000/api
+
+$env:PATH = "D:\wkhtmltopdf\bin;D:\Pandoc;" + $env:PATH
